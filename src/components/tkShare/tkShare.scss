@@ -1,0 +1,44 @@
+.-mob-share-weixin-qrcode-content{
+    position: fixed;
+    z-index: 999999999;
+    top: 10%;
+    width: 250px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #333;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    .-mob-share-weixin-qrcode-close{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: 0 0;
+      border: none;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+    }
+    .-mob-share-weixin-qrcode-header {
+      font-size: 13px;
+      text-indent: 0;
+      text-align: center;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .-mob-share-weixin-qrcode {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  .-mob-share-weixin-qrcode-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 999999998;
+    left: 0;
+    top: 0;
+  }

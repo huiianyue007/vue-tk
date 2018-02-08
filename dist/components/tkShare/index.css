@@ -1,0 +1,104 @@
+
+.share[data-v-5b8e7fc6] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.share .top[data-v-5b8e7fc6], .share .bottom[data-v-5b8e7fc6] {
+    width: 100%;
+}
+.share .left[data-v-5b8e7fc6], .share .right[data-v-5b8e7fc6] {
+    height: 100%;
+    width: 30%;
+}
+.share .left .share_list[data-v-5b8e7fc6], .share .right .share_list[data-v-5b8e7fc6] {
+      margin-top: 10px;
+}
+.share .left .share_cancel[data-v-5b8e7fc6], .share .right .share_cancel[data-v-5b8e7fc6] {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+}
+.share .share_con[data-v-5b8e7fc6] {
+    text-align: center;
+}
+.share .share_con .share_ul[data-v-5b8e7fc6] {
+      padding: 16px;
+}
+.share .share_con .share_ul .share_list[data-v-5b8e7fc6] {
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 30px 30px;
+        height: 30px;
+        font-size: 12px;
+        padding-bottom: 4em;
+        box-sizing: border-box;
+        position: relative;
+}
+.share .share_con .share_ul .share_list .icon[data-v-5b8e7fc6] {
+          width: 30px;
+          height: 30px;
+}
+.share .share_con .share_ul .share_list .share_title[data-v-5b8e7fc6] {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          margin: 0;
+          width: 100%;
+          text-align: center;
+          line-height: 1em;
+          white-space: nowrap;
+}
+.share .share_con .share_cancel[data-v-5b8e7fc6] {
+      height: 3em;
+      line-height: 3em;
+      background: #efefef;
+      font-size: 14px;
+}
+.-mob-share-weixin-qrcode-content {
+  position: fixed;
+  z-index: 999999999;
+  top: 10%;
+  width: 250px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #333;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+  .-mob-share-weixin-qrcode-content .-mob-share-weixin-qrcode-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px; }
+  .-mob-share-weixin-qrcode-content .-mob-share-weixin-qrcode-header {
+    font-size: 13px;
+    text-indent: 0;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0; }
+  .-mob-share-weixin-qrcode-content .-mob-share-weixin-qrcode {
+    width: 250px;
+    height: 250px; }
+
+.-mob-share-weixin-qrcode-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  z-index: 999999998;
+  left: 0;
+  top: 0; }
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,69 @@
+
+.tk-box {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.tk-box .tk-box-padding {
+    width: 100%;
+    z-index: 0;
+}
+.tk-box .tk-box-inner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.tk-box .tk-box-inner > .fill {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+}
+.tk-box .tk-box-inner > .tk-box.tk-box-top {
+      position: absolute;
+      top: 0;
+}
+.tk-box .tk-box-inner > .tk-box.tk-box-bottom {
+      position: absolute;
+      bottom: 0;
+}
+.tk-box .tk-box-inner > .tk-box.tk-box-center {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+}
+.tk-box .tk-box-inner > .tk-box.tk-box-left {
+      position: absolute;
+      left: 0;
+}
+.tk-box .tk-box-inner > .tk-box.tk-box-right {
+      position: absolute;
+      right: 0;
+}
+.tk-box .tk-box-inner > .tk-box.tk-box-middle {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+}
+.tk-box.ratio-16-9 .tk-box-padding {
+    padding-bottom: 56.25%;
+}
+.tk-box.ratio-9-16 .tk-box-padding {
+    padding-bottom: 177.78%;
+}
+.tk-box.ratio-1-1 .tk-box-padding {
+    padding-bottom: 100%;
+}
+.tk-box.ratio-4-3 .tk-box-padding {
+    padding-bottom: 75%;
+}
+.tk-box.ratio-3-4 .tk-box-padding {
+    padding-bottom: 133.33%;
+}
+
+/*# sourceMappingURL=index.css.map*/

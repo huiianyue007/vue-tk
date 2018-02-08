@@ -1,0 +1,24 @@
+
+.tk-svg{
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}
+svg.tk-svg{
+  width: 24px;
+  height: 24px;
+}
+.tk-icon.spin{
+  animation: tk-spin 2s infinite linear;
+}
+@keyframes tk-spin {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+
+
+/*# sourceMappingURL=index.css.map*/

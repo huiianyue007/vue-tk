@@ -1,0 +1,53 @@
+
+.backdrop[data-v-539dd776]{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99998;
+  background-color: rgba(0,0,0,.54);
+  display:block;
+}
+.tk-cover[data-v-539dd776]{
+  position: fixed;
+  display:-ms-flexbox;
+  display:flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: transparent;
+  -webkit-perspective: 1000;
+}
+.fade-enter-active[data-v-539dd776], .fade-leave-active[data-v-539dd776] {
+  transition: opacity .5s
+}
+.fade-enter[data-v-539dd776], .fade-leave-active[data-v-539dd776] {
+  opacity: 0;
+}
+.scale-leave-active[data-v-539dd776], .scale-enter-active[data-v-539dd776], .left-leave-active[data-v-539dd776], .left-enter-active[data-v-539dd776], .right-leave-active[data-v-539dd776], .right-enter-active[data-v-539dd776], .top-leave-active[data-v-539dd776], .top-enter-active[data-v-539dd776], .bottom-leave-active[data-v-539dd776], .bottom-enter-active[data-v-539dd776]{
+  transition: all .5s;
+}
+.scale-enter[data-v-539dd776], .scale-leave-active[data-v-539dd776] {
+  transform:  scale(0.1, 0.1);
+}
+.left-enter[data-v-539dd776], .left-leave-active[data-v-539dd776] {
+  transform: translate3d(-100%, 0, 0);
+}
+.right-enter[data-v-539dd776], .right-leave-active[data-v-539dd776] {
+  transform: translate3d(100%, 0, 0);
+}
+.top-enter[data-v-539dd776], .top-leave-active[data-v-539dd776] {
+  transform: translate3d(0, -100%, 0);
+}
+.bottom-enter[data-v-539dd776], .bottom-leave-active[data-v-539dd776] {
+  transform: translate3d(0, 100%, 0);
+}
+
+.tk-cover *{
+  pointer-events: auto;
+}
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,126 @@
+.tk-flex{
+  display:flex;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  &>*{
+    box-sizing: border-box;
+  }
+
+  &.tk-flex-average>*{
+    flex:1;
+  }
+
+  &.tk-flex-wrap{
+    flex-wrap: wrap;
+  }
+
+  &.tk-flex-column{
+    flex-direction: column;
+
+    &.tk-flex-middle{
+      justify-content:center;
+    }
+    &.tk-flex-top{
+      justify-content:flex-start;
+    }
+    &.tk-flex-bottom{
+      justify-content:flex-end;
+    }
+    &.tk-flex-left{
+      align-items: flex-start;
+    }
+    &.tk-flex-right{
+      align-items: flex-end;
+    }
+    &.tk-flex-center{
+      align-items: center;
+    }
+    &.tk-flex-average>* {
+      height: 0;
+    }
+  }
+  &.tk-flex-row{
+    flex-direction: row;
+
+    &.tk-flex-middle{
+      align-items:center;
+    }
+    &.tk-flex-top{
+      align-items:flex-start;
+    }
+    &.tk-flex-bottom{
+      align-items:flex-end;
+    }
+    &.tk-flex-left{
+      justify-content: flex-start;
+    }
+    &.tk-flex-right{
+      justify-content: flex-end;
+    }
+    &.tk-flex-center{
+      justify-content: center;
+    }
+    &>.self-top{
+      align-self: flex-start;
+    }
+    &>.self-middle{
+      align-self: center;
+    }
+    &>.self-bottom{
+      align-self: flex-end;
+    }
+    &.tk-flex-average>* {
+      width: 0;
+    }
+  }
+  &.tk-flex-row,
+  &.tk-flex-column{
+    &.tk-flex-between{
+      justify-content:space-between;
+    }
+    &.tk-flex-around{
+      justify-content: space-around;
+    }
+    &.tk-flex-stretch{
+      align-items: stretch;
+    }
+  }
+
+  $sizes: (1, 2, 4, 8, 16, 24, 32, 40);
+  @each $item in $sizes {
+    &.gutter-#{$item}:not(.wrap-gutter){
+      margin-top: -$item + px;
+      margin-left: -$item + px;
+    }
+    &.gutter-#{$item}.wrap-gutter{
+      padding-right: $item + px;
+      padding-bottom: $item + px;
+    }
+
+    &.gutter-#{$item}>*{
+      padding-left: $item + px;
+      padding-top: $item + px;
+    }
+  }
+}
+
+.fill {
+  flex-grow:1;
+}
+.full {
+  width: 100%;
+}
+$total-columns:12 !default;
+
+@for $i from 1 through $total-columns {
+  .tk-grid-#{$i} {
+    width: percentage($i/$total-columns) !important;
+  }
+}
+@for $i from 1 through $total-columns - 2 {
+  .tk-grid-offset-#{$i} {
+    margin-left: percentage($i/$total-columns) !important;
+  }
+}
+

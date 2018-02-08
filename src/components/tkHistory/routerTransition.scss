@@ -1,0 +1,29 @@
+.forward-enter-active,
+.forward-leave-active,
+.back-enter-active,
+.back-leave-active{
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all .24s ease;
+}
+.forward-enter, .back-leave-to{
+  transform: translate3d(100%, 0, 0);
+  z-index: 1;
+}
+.forward-leave-to, .back-enter{
+  transform: translate3d(-20%, 0, 0);
+}
+.back-leave-active{
+  z-index: 1;
+}
+.history-transition{
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}

@@ -1,0 +1,118 @@
+.tk-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(250, 250, 250);
+}
+@media (min-width: 768px) {
+  .tk-container.mobile-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .tk-container-content{
+      width: 414px;
+      height: 736px;
+      max-height: 100%;
+      max-width: 100%;
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12);
+    }
+  }
+}
+.tk-container-content{
+  transform: translateZ(0);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  .tk-container-cover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+    pointer-events: none;
+    &>*{
+      pointer-events: auto;
+    }
+  }
+  .tk-container-main-warp{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .tk-container-main-cover{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 10;
+      pointer-events: none;
+      & > * {
+        pointer-events: auto;
+      }
+    }
+    .tk-container-body-warp {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      .tk-container-body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .scroll-content.disable-scroll{
+          overflow-y: hidden;
+          height: 100%;
+        }
+        .scroll-content.container-center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .tk-container-body-cover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 10;
+        pointer-events: none;
+        & > * {
+          pointer-events: auto;
+        }
+      }
+      .loading-more{
+        width: 100%;
+        position: relative;
+        height: 56px;
+      }
+      .no-more-data{
+        text-align: center;
+        color: #999999;
+        line-height: 36px;
+        height: 36px;
+      }
+    }
+  }
+}
+.fade-enter-active,
+.fade-leave-active{
+  transition: all .1s ease;
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
+

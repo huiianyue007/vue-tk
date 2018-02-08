@@ -1,0 +1,15 @@
+
+div[data-v-538afe0a]{
+  display:block;
+  width:100%;
+}
+.status-bar.fixed[data-v-538afe0a]{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:100000;
+  background-color:black;
+}
+
+/*# sourceMappingURL=index.css.map*/
